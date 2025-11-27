@@ -9,8 +9,8 @@ export default function RoleSelector({ selected, onSelect }) {
             onClick={() => onSelect(r)}
             className={`p-3 rounded-lg border text-sm ${
               selected === r
-                ? "border-blue-600 bg-blue-50"
-                : "border-gray-300 hover:border-blue-400"
+                ? "border-blue-600 bg-blue-50 dark:bg-blue-900 dark:text-white"
+                : "border-gray-300 dark:border-gray-600 hover:border-blue-400"
             }`}
           >
             {r}

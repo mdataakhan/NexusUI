@@ -37,10 +37,10 @@ export default function Signup() {
 
       {/* LEFT SECTION - Signup Form */}
       <div className="flex items-center justify-center w-full lg:w-1/2 p-8">
-        <div className="bg-white text-gray-900 w-full max-w-md p-10 rounded-2xl shadow-xl">
+        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white w-full max-w-md p-10 rounded-2xl shadow-xl">
 
           <h2 className="text-3xl font-bold mb-2">Create Account</h2>
-          <p className="text-gray-500 mb-6">
+          <p className="text-gray-500 dark:text-gray-400 mb-6">
             Join Nexus by creating your free account.
           </p>
 
@@ -63,7 +63,7 @@ export default function Signup() {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <p className="text-gray-700 mt-4 mb-2 font-medium">Select Role</p>
+          <p className="text-gray-700 dark:text-gray-300 mt-4 mb-2 font-medium">Select Role</p>
 
           <RoleSelector selected={role} onSelect={setRole} />
 

@@ -55,9 +55,9 @@ export default function Login() {
 
       {/* RIGHT SECTION */}
       <div className="flex justify-center items-center w-1/2 p-6">
-        <div className="bg-white text-gray-900 w-full max-w-md p-10 rounded-2xl shadow-xl">
+        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white w-full max-w-md p-10 rounded-2xl shadow-xl">
           <h2 className="text-3xl font-semibold mb-1">Sign In</h2>
-          <p className="text-gray-500 mb-6">Welcome back! Please sign in.</p>
+          <p className="text-gray-500 dark:text-gray-400 mb-6">Welcome back! Please sign in.</p>
 
           <InputField label="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
           <InputField label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
