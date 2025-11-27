@@ -19,9 +19,20 @@ export default function Login() {
 
       // extract payload
       const payload = JSON.parse(atob(token.split(".")[1]));
+      const role = payload.roles[0];
       const userId = payload.id;
-
-      navigate(`/dashboard?user=${userId}`);
+      if (role === "ADMIN") {
+        navigate("/dashboard");
+        return;
+      }
+      if (role === "SUPPLIER") {
+        navigate(`/dashboard?user=${userId}`);
+        return;
+      }
+      if (role === "FUNDER") {
+        navigate(`/dashboard?user=${userId}`);
+        return;
+      }
     } catch (err) {
       console.error("Login error:", err);
       alert("Login Failed");
