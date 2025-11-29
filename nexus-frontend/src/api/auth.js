@@ -13,3 +13,4 @@ API.interceptors.request.use((config) => {
 
 export const loginUser = (body) => API.post("/auth/login", body);
 export const registerUser = (body) => API.post("/api/v1/user", body);
+export { API };
